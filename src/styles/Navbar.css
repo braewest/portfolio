@@ -1,0 +1,35 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 1rem 3rem;
+  background-color: rgba(10, 10, 10, 0.9);
+  backdrop-filter: blur(6px);
+  z-index: 100;
+}
+
+.navbar .nav-links {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+.navbar .nav-links li a {
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 300;
+  transition: color 0.3s ease;
+}
+
+.navbar .nav-links li a:hover {
+  color: var(--primary);
+}
+
+.navbar .nav-links li a.active {
+  color: var(--primary);
+  border-bottom: 2px solid var(--primary);
+}

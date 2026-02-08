@@ -1,13 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Elms+Sans:ital,wght@0,100..900;1,100..900&family=SN+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "SN Pro", sans-serif;
+  color: var(--text);
 }
 
 html, body, #root {
   width: 100%;
   height: 100%;
   font-family: system-ui, sans-serif;
+
+  /* Color palette */
+  --text: #f3dede;
+  --background: #0d0d0d;
+  --primary: #de5050;
+  --secondary: #e29494;
+  --accent: #851e1e;
+}
+
+h1 {
+  font-size: 5rem;
+  font-weight: 200;
+}
+
+p {
+  font-size: 1rem;
+  font-weight: 200;
 }
 
 /* Canvas background */
@@ -30,11 +51,35 @@ html, body, #root {
 .hero {
   width: 100%;
   height: 100vh;
+  margin-top: 4rem;
+  padding-bottom: 8rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 2rem;
+  color: var(--text);
   background: transparent;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  font-weight: 200;
+}
+
+.hero button {
+  padding: 0.75rem 3rem;
+  margin-top: 2rem;
+  font-size: 1.25rem;
+  font-weight: 200;
+  color: var(--text);
+  background: transparent;
+  border-color: var(--text);
+  border-radius: 0.15rem;
+  transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+}
+
+.hero button:hover {
+  transform: scale(1.05);
+  background-color: var(--primary);
 }
