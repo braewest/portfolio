@@ -22,7 +22,7 @@ html, body, #root {
 }
 
 section {
-  padding: 8rem 2rem;
+  padding: 8rem 4rem;
 }
 
 h1 {
@@ -33,6 +33,13 @@ h1 {
 h2 {
   font-size: 3rem;
   font-weight: 200;
+  margin: 2rem;
+}
+
+h3 {
+  font-size: 2rem;
+  font-weight: 200;
+  margin: 2rem;
 }
 
 p {
