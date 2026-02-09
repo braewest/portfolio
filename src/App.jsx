@@ -1,5 +1,6 @@
 import ConstellationBackground from "./components/ConstellationBackground.jsx";
 import Navbar from './components/Navbar.jsx';
+import Footer from './components/Footer.jsx';
 import { Routes, Route } from "react-router-dom";
 import './styles/App.css'
 
@@ -22,6 +23,7 @@ function App() {
           <Route path="/personal" element={<Personal />} />
         </Routes>
       </main>
+      <Footer />
     </>
   );
 }
