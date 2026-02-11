@@ -1,9 +1,9 @@
 import '../styles/Footer.css';
 
 // Icons
-import github from '../assets/icons/github.svg';
-import linkedin from '../assets/icons/linkedin.svg';
-import email from '../assets/icons/email.svg';
+import github from '../assets/icons/tech/github.svg';
+import linkedin from '../assets/icons/tech/linkedin.svg';
+import email from '../assets/icons/tech/email.svg';
 
 export default function Footer() {
     return (

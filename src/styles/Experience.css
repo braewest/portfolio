@@ -1,0 +1,23 @@
+.education-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.education-item h3 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.school {
+  font-size: 1.15rem;
+  margin-top: 0.25rem;
+}
+
+.dates {
+  font-size: 0.95rem;
+  opacity: 0.75;
+  margin-top: 0.25rem;
+}

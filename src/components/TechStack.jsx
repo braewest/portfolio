@@ -1,23 +1,23 @@
 import '../styles/TechStack.css';
 
 // Icons
-import azure from '../assets/icons/azure.svg';
-import blender from '../assets/icons/blender.svg';
-import cloudflare from '../assets/icons/cloudflare.svg';
-import cpp from '../assets/icons/cpp.svg';
-import csharp from '../assets/icons/csharp.svg';
-import css from '../assets/icons/css.svg';
-import git from '../assets/icons/git.svg';
-import html from '../assets/icons/html.svg';
-import java from '../assets/icons/java.svg';
-import javascript from '../assets/icons/javascript.svg';
-import kotlin from '../assets/icons/kotlin.svg';
-import nodejs from '../assets/icons/nodejs.svg';
-import oracle from '../assets/icons/oracle.svg';
-import react from '../assets/icons/react.svg';
-import sql from '../assets/icons/sql.svg';
-import swift from '../assets/icons/swift.svg';
-import unity from '../assets/icons/unity.svg';
+import azure from '../assets/icons/tech/azure.svg';
+import blender from '../assets/icons/tech/blender.svg';
+import cloudflare from '../assets/icons/tech/cloudflare.svg';
+import cpp from '../assets/icons/tech/cpp.svg';
+import csharp from '../assets/icons/tech/csharp.svg';
+import css from '../assets/icons/tech/css.svg';
+import git from '../assets/icons/tech/git.svg';
+import html from '../assets/icons/tech/html.svg';
+import java from '../assets/icons/tech/java.svg';
+import javascript from '../assets/icons/tech/javascript.svg';
+import kotlin from '../assets/icons/tech/kotlin.svg';
+import nodejs from '../assets/icons/tech/nodejs.svg';
+import oracle from '../assets/icons/tech/oracle.svg';
+import react from '../assets/icons/tech/react.svg';
+import sql from '../assets/icons/tech/sql.svg';
+import swift from '../assets/icons/tech/swift.svg';
+import unity from '../assets/icons/tech/unity.svg';
 
 const techStack = [
   { name: "Java", logo: java },
@@ -28,9 +28,9 @@ const techStack = [
   { name: "HTML", logo: html },
   { name: "CSS", logo: css },
   { name: "JavaScript", logo: javascript },
+  { name: "Git", logo: git },
   { name: "React", logo: react },
   { name: "Node.js", logo: nodejs },
-  { name: "Git", logo: git },
   { name: "Oracle", logo: oracle},
   { name: "Azure", logo: azure },
   { name: "Cloudflare", logo: cloudflare },
