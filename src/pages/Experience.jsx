@@ -31,10 +31,10 @@ export default function Experience() {
         <h2>Professional Experience</h2>
         <div className="card-list">
           <ExperienceCard 
-            title="ASU/NASA Marston Exploration Theater"
+            title="ASU/NASA Interactive Webpage"
             role="Technical Lead"
             dates="Sep. 2025 - Present"
-            description="I led the technical development of immersive 3D educational theather show for the NASA Psyche mission, translating complex scientific concepts into accurate and engaging visual content. My work involved building and optimizing spacecraft and asteroid models, collaborating closely with researchers, and guiding technical decisions to ensure performance, clarity, and scientific integrity in a public-facing exhibit."
+            description="I led the technical development of immersive 3D educational webpage for the NASA Psyche mission, translating complex scientific concepts into accurate and engaging visual content. My work involved building the physics simulator, collaborating closely with researchers, and guiding technical decisions to ensure performance, clarity, and scientific integrity in a public-facing environment."
             link=""
           />
           <ExperienceCard 

@@ -17,6 +17,7 @@ import oracle from '../assets/icons/tech/oracle.svg';
 import react from '../assets/icons/tech/react.svg';
 import sql from '../assets/icons/tech/sql.svg';
 import swift from '../assets/icons/tech/swift.svg';
+import threejs from '../assets/icons/tech/threejs.svg';
 import unity from '../assets/icons/tech/unity.svg';
 
 const techStack = [
@@ -31,6 +32,7 @@ const techStack = [
   { name: "Git", logo: git },
   { name: "React", logo: react },
   { name: "Node.js", logo: nodejs },
+  { name: "Three.js", logo: threejs },
   { name: "Oracle", logo: oracle},
   { name: "Azure", logo: azure },
   { name: "Cloudflare", logo: cloudflare },
