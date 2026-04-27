@@ -19,6 +19,27 @@ const projects = [
     ],
   },
   {
+    id: "dungeon-generator",
+    title: "Dungeon Generator",
+    tech: ["React", "JavaScript", "Vite"],
+    github: "https://github.com/braewest/dungeon-generator",
+    summary:
+      "A React app for procedurally generating and manually editing multi-floor dungeons, with a custom block palette system and Litematica export so the dungeon can be imported directly into Minecraft.",
+    description:
+      "A React-based tool for designing multi-floor dungeons procedurally and by hand. Built around a three-panel interface — generation controls, a tile-based canvas editor, and a block palette customizer — it lets you generate a dungeon layout, manually paint or place room templates on top of it, and then export the result as a Litematica schematic file for direct import into Minecraft.",
+    highlights: [
+      "Procedural dungeon generation across multiple interconnected floors with rooms, corridors, doors, and staircases.",
+      "Tile-based canvas editor with paint, erase, room stamping, and drag-to-size room placement tools.",
+      "Room library system for creating, editing, and reusing custom room templates across generations.",
+      "Block palette customization — assign any Minecraft blocks to floor types and save presets via localStorage.",
+      "Litematica compilation export to import the finished dungeon directly into Minecraft.",
+      "Full undo/redo history for both the main dungeon editor and the room editor.",
+    ],
+    images: [
+      // { src: "/images/dungeon-generator/screenshot.png", caption: "Optional caption" },
+    ],
+  },
+  {
     id: "dfa-parser",
     title: "Deterministic Finite Automaton Parser",
     tech: ["C++", "Git"],
