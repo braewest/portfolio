@@ -6,7 +6,7 @@ import './styles/index.css'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <HashRouter basename="/portfolio/">
+    <HashRouter>
       <App />
     </HashRouter>
   </StrictMode>
