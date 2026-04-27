@@ -1,20 +1,30 @@
 import { useState } from 'react';
 import '../styles/Personal.css';
 
+const base = import.meta.env.BASE_URL;
+
 const buildImages = [
-  // { src: "/images/personal/minecraft-base.png", caption: "Survival mega base" },
+  { src: `${base}images/builds/Season2Base.png`, caption: "Season 2 Base" },
+  { src: `${base}images/builds/BridgeBuild.png`, caption: "Arch Bridge" },
+  { src: `${base}images/builds/4thOfJuly.png`, caption: "Summer 2025" },
 ];
 
 const drumlineImages = [
-  // { src: "/images/personal/rose-parade.png", caption: "Rose Parade 2022" },
+  { src: `${base}images/band/RoseParade.jpg`, caption: "Rose Parade 2023" },
+  { src: `${base}images/band/GrandNationals2021.jpg`, caption: "Nationals 2021" },
+  { src: `${base}images/band/Ascension.jpg`, caption: "Ascension WGI Finals" },
 ];
 
 const gamingImages = [
-  // { src: "/images/personal/death-stranding.png", caption: "Death Stranding" },
+  { src: `${base}images/games/DS.jpg`, caption: "Death Stranding 2" },
+  { src: `${base}images/games/Astroneer.jpg`, caption: "Planetary Settlement" },
+  { src: `${base}images/games/KSP.jpg`, caption: "Geostationary Satellite" },
 ];
 
 const hikingImages = [
-  // { src: "/images/personal/sedona.png", caption: "Edge of the World, Sedona" },
+  { src: `${base}images/hiking/EdgeOfTheWorld.jpg`, caption: "Edge of the World" },
+  { src: `${base}images/hiking/CamelbackMountain.jpg`, caption: "Camelback Mountain" },
+  { src: `${base}images/hiking/CanyonLake.jpg`, caption: "Canyon Lake" },
 ];
 
 export default function Personal() {
@@ -71,7 +81,7 @@ export default function Personal() {
       <section className="personal-section">
         <h3>Hiking</h3>
         <p>
-          Moving to Arizona got me into hiking, and Sedona in particular has become one of my favorite places. Edge of the World trail is at the top of my list — the views are unlike anything in Michigan. Getting out on the trails is a good reset, and the landscape out there still catches me off guard.
+          Moving to Arizona got me into hiking, and Sedona has become one of my favorite places. Edge of the World trail is at the top of my list — the views are incredible and the landscape out there still catches me off guard. Getting out on the trails is a good reset.
         </p>
         <Gallery images={hikingImages} onOpen={setLightboxSrc} />
       </section>

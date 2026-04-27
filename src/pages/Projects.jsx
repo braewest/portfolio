@@ -19,12 +19,13 @@ export default function Projects() {
             </div>
             <p className="project-summary">{project.summary}</p>
             <div className="project-card-footer">
-              <a className="link" href={project.github} target="_blank" rel="noreferrer">
-                GitHub →
-              </a>
-              <Link className="link" to={`/projects/${project.id}`}>
-                More Details →
-              </Link>
+              {project.website && (
+                <a className="link" href={project.website} target="_blank" rel="noreferrer">Website →</a>
+              )}
+              {project.github && (
+                <a className="link" href={project.github} target="_blank" rel="noreferrer">GitHub →</a>
+              )}
+              <Link className="link" to={`/projects/${project.id}`}>More Details →</Link>
             </div>
           </div>
         ))}

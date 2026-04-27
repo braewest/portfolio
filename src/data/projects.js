@@ -22,6 +22,7 @@ const projects = [
     id: "dungeon-generator",
     title: "Dungeon Generator",
     tech: ["React", "JavaScript", "Vite"],
+    website: "https://braewest.github.io/dungeon-generator/",
     github: "https://github.com/braewest/dungeon-generator",
     summary:
       "A React app for procedurally generating and manually editing multi-floor dungeons, with a custom block palette system and Litematica export so the dungeon can be imported directly into Minecraft.",

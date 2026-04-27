@@ -52,3 +52,11 @@
   transform: translateX(4px);
   opacity: 0.85;
 }
+
+.experience-card-footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 2rem;
+  width: 100%;
+  margin-top: 0.5rem;
+}

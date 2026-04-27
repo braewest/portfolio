@@ -38,16 +38,22 @@ export default function Experience() {
   );
 }
 
-function ExperienceCard({ id, title, role, dates, summary }) {
+function ExperienceCard({ id, title, role, dates, summary, github, website }) {
   return (
     <div className="card experience-item">
       <h3>{title}</h3>
       <p className="role">{role}</p>
       <p className="dates">{dates}</p>
       <p className="description">{summary}</p>
-      <Link className="link learn-more" to={`/experience/${id}`}>
-        More Details →
-      </Link>
+      <div className="experience-card-footer">
+        {website && (
+          <a className="link" href={website} target="_blank" rel="noreferrer">Website →</a>
+        )}
+        {github && (
+          <a className="link" href={github} target="_blank" rel="noreferrer">GitHub →</a>
+        )}
+        <Link className="link learn-more" to={`/experience/${id}`}>More Details →</Link>
+      </div>
     </div>
   );
 }

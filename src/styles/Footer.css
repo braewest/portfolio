@@ -1,7 +1,5 @@
 footer {
   width: 100%;
-  position: absolute;
-  left: 0;
   padding: 3rem 0;
   margin-top: 6rem;
   display: flex;
@@ -9,8 +7,6 @@ footer {
   justify-content: center;
   align-items: center;
   background-color: rgba(10, 10, 10, 0.9);
-  backdrop-filter: blur(2px);
-  z-index: 100;
 }
 
 footer p {
