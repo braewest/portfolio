@@ -6,7 +6,7 @@ const base = import.meta.env.BASE_URL;
 const buildImages = [
   { src: `${base}images/builds/Season2Base.png`, caption: "Season 2 Base" },
   { src: `${base}images/builds/BridgeBuild.png`, caption: "Arch Bridge" },
-  { src: `${base}images/builds/4thOfJuly.png`, caption: "Summer 2025" },
+  { src: `${base}images/builds/Fireworks.png`, caption: "Summer 2025" },
 ];
 
 const drumlineImages = [
