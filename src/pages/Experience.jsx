@@ -1,4 +1,6 @@
+import { Link } from 'react-router-dom';
 import TechStack from '../components/TechStack';
+import experience from '../data/experience';
 import '../styles/Experience.css';
 
 export default function Experience() {
@@ -10,18 +12,14 @@ export default function Experience() {
           <div className="card education-item">
             <div>
               <h3>Bachelor of Science in Computer Science (Software Engineering)</h3>
-              <p className="school">
-                Arizona State University
-              </p>
+              <p className="school">Arizona State University</p>
               <p className="dates">Aug. 2024 - May 2026 | Tempe, AZ</p>
             </div>
           </div>
           <div className="card education-item">
             <div>
               <h3>Associate of Arts in Computer Information Systems</h3>
-              <p className="school">
-                Grand Rapids Community College
-              </p>
+              <p className="school">Grand Rapids Community College</p>
               <p className="dates">Aug. 2023 - Aug. 2024 | Grand Rapids, MI</p>
             </div>
           </div>
@@ -30,27 +28,9 @@ export default function Experience() {
       <section>
         <h2>Professional Experience</h2>
         <div className="card-list">
-          <ExperienceCard 
-            title="ASU/NASA Interactive Webpage"
-            role="Technical Lead"
-            dates="Sep. 2025 - Present"
-            description="I led the technical development of immersive 3D educational webpage for the NASA Psyche mission, translating complex scientific concepts into accurate and engaging visual content. My work involved building the physics simulator, collaborating closely with researchers, and guiding technical decisions to ensure performance, clarity, and scientific integrity in a public-facing environment."
-            link=""
-          />
-          <ExperienceCard 
-            title="Packsyncr"
-            role="Full Stack Developer"
-            dates="Nov. 2025 - Present"
-            description="I designed and developed a full-stack web platform focused on simplifying collaborative resource pack management. This project involved building scalable backend services, creating intuitive user interfaces, and architecting systems that support versioning, synchronization, and user collaboration, with an emphasis on performance and maintainability."
-            link=""
-          />
-          <ExperienceCard 
-            title="Next Level DFS"
-            role="Web Developer"
-            dates="Dec. 2025 - Jan. 2026"
-            description="I contributed to the development and improvement of a production website by enhancing performance, refining UI behavior, and improving overall code maintainability. My role focused on implementing clean, responsive components and ensuring a smooth user experience while working within an existing workspace."
-            link=""
-          />
+          {experience.map((item) => (
+            <ExperienceCard key={item.id} {...item} />
+          ))}
           <TechStack />
         </div>
       </section>
@@ -58,16 +38,16 @@ export default function Experience() {
   );
 }
 
-function ExperienceCard({ title, role, dates, description, link }) {
+function ExperienceCard({ id, title, role, dates, summary }) {
   return (
     <div className="card experience-item">
       <h3>{title}</h3>
       <p className="role">{role}</p>
       <p className="dates">{dates}</p>
-      <p className="description">{description}</p>
-      <a className="link" href={link}>
+      <p className="description">{summary}</p>
+      <Link className="link learn-more" to={`/experience/${id}`}>
         More Details →
-      </a>
+      </Link>
     </div>
   );
 }

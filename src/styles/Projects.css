@@ -1,0 +1,59 @@
+.project-card {
+  align-items: flex-start;
+  gap: 0.75rem;
+}
+
+.project-header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+.project-header h3 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 300;
+  text-align: left;
+}
+
+.tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tech-tag {
+  font-size: 0.8rem;
+  font-weight: 300;
+  padding: 0.2rem 0.65rem;
+  border-radius: 999px;
+  border: 1px solid var(--secondary);
+  opacity: 0.75;
+}
+
+.project-summary {
+  text-align: left;
+  opacity: 0.85;
+}
+
+.project-card-footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 2rem;
+  width: 100%;
+  margin-top: 0.5rem;
+}
+
+.link {
+  color: var(--primary);
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 300;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.link:hover {
+  opacity: 0.75;
+  transform: translateX(3px);
+}
