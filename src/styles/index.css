@@ -197,6 +197,7 @@ button {
   border-radius: 8px;
   overflow: hidden;
   background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(2px);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
