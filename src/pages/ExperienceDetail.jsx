@@ -25,7 +25,7 @@ export default function ExperienceDetail() {
         <h2>{item.title}</h2>
         <p className="experience-detail-role">{item.role}</p>
         <p className="experience-detail-meta">{item.dates} &mdash; {item.location}</p>
-        <div className="experience-detail-links">
+        <div className="detail-links">
           {item.website && (
             <a className="link" href={item.website} target="_blank" rel="noreferrer">
               Visit Website →

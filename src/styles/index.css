@@ -188,6 +188,13 @@ button {
   }
 }
 
+/* Shared detail page links */
+.detail-links {
+  display: flex;
+  justify-content: flex-end;
+  gap: 2rem;
+}
+
 /* Shared gallery & lightbox */
 .gallery-item {
   all: unset;

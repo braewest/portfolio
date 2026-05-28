@@ -19,6 +19,27 @@ const projects = [
     ],
   },
   {
+    id: "udp-transfer",
+    title: "UDP General Transfer System",
+    tech: ["C++", "CMake", "OpenCV", "Winsock2"],
+    github: "https://github.com/braewest/udp-transfer",
+    summary:
+      "A real-time UDP transport system built from scratch in C++, capable of streaming live webcam video at 30fps by implementing custom packet framing, multi-threaded producer-consumer pipelines, and frame reassembly on the receiver.",
+    description:
+      "Built a real-time UDP transport system in C++ from scratch, implementing the full stack from socket programming to frame reassembly. The system streams live webcam video at 30fps by capturing frames with OpenCV, compressing them to JPEG, splitting them into MTU-safe chunks, and reassembling them on the receiver. This project implements the same concepts behind RTP, the protocol used by Zoom, WebRTC, and Twitch for real-time media.",
+    highlights: [
+      "Thread-safe generic queue using std::mutex and std::condition_variable, with blocking and non-blocking consumer variants used as the handoff point between all threads.",
+      "Fixed-width binary packet struct with #pragma pack(1) for deterministic network byte layout, mirroring RTP header fields — sequence number, chunk ID, payload type, session ID, and 1400-byte payload sized to fit within Ethernet MTU.",
+      "Sender runs a capture thread (DirectShow webcam at 30fps, JPEG compression, chunk splitting) and a send thread (waitAndPop + sendto) as separate pipeline stages.",
+      "Receiver runs a receive thread (recvfrom into a queue) and a render thread (chunk grouping by frame ID, sorted reassembly, cv::imdecode, 200ms incomplete-frame timeout).",
+      "4MB socket receive buffer via setsockopt to handle burst traffic from frame chunks arriving together.",
+      "Streams at 30fps with zero packet loss on localhost, processing ~600 packets/second across approximately 20 chunks per frame.",
+    ],
+    images: [
+      // { src: "/images/udp-transfer/screenshot.png", caption: "Optional caption" },
+    ],
+  },
+  {
     id: "dungeon-generator",
     title: "Dungeon Generator",
     tech: ["React", "JavaScript", "Vite"],

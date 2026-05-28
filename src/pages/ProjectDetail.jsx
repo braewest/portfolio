@@ -28,9 +28,14 @@ export default function ProjectDetail() {
             <span key={t} className="tech-tag">{t}</span>
           ))}
         </div>
-        <a className="link" href={project.github} target="_blank" rel="noreferrer">
-          View on GitHub →
-        </a>
+        <div className="detail-links">
+          {project.website && (
+            <a className="link" href={project.website} target="_blank" rel="noreferrer">Visit Website →</a>
+          )}
+          {project.github && (
+            <a className="link" href={project.github} target="_blank" rel="noreferrer">View on GitHub →</a>
+          )}
+        </div>
       </div>
 
       <p className="project-detail-description">{project.description}</p>
