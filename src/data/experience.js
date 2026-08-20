@@ -3,7 +3,7 @@ const experience = [
     id: "asu-nasa",
     title: "ASU/NASA Psyche Mission",
     role: "Technical Lead",
-    dates: "Sep. 2025 - Present",
+    dates: "Sep. 2025 - May 2026",
     location: "Tempe, AZ",
     website: "https://missiontopsyche-platinum.github.io/platinum_14a_3d_show-cs/",
     github: "https://github.com/MissionToPsyche-Platinum/platinum_14a_3d_show-cs",
@@ -25,7 +25,7 @@ const experience = [
   {
     id: "packsyncr",
     title: "Packsyncr",
-    role: "Full Stack Developer",
+    role: "Full Stack Developer (Personal Project)",
     dates: "Nov. 2025 - Present",
     location: "Tempe, AZ",
     website: "",
@@ -46,7 +46,7 @@ const experience = [
   {
     id: "next-level-dfs",
     title: "Next Level DFS",
-    role: "Web Developer",
+    role: "Web Developer (Contract Work)",
     dates: "Dec. 2025 - Jan. 2026",
     location: "Rockford, MI",
     website: "",
